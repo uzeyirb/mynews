@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .delete-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: rgb(170, 86, 42);
+        transition: all 0.2s;
+        cursor: pointer;
+        background-color: transparent;
+        outline: none;
+        border: none;
+      }
+
+      .delete-button:hover{
+        transform: scale(.95)
+      }
+    </style>
+
+    <title>Posts</title>
+  </head>
+
+  <body>
+    <header id="header"></header>
+
+    <main>
+      <section id="home-info" class="container">
+        <div class="jumbotron mt-5 text-center bg-transparent">
+          <h1 class="display-4 font-weight-bold">Posts</h1>
+
+          <!--Search bar-->
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="postTitle"
+              placeholder="Title"
+              aria-describedby="emailHelp"
+            />
+            <textarea
+              class="form-control mt-4"
+              placeholder="Description"
+              id="postDesc"
+            ></textarea>
+          </div>
+          <button type="button" id="addPostBtn" class="btn btn-info btn-block">
+            Add Post
+          </button>
+        </div>
+
+        <div class="d-flex flex-wrap" id="postList"></div>
+        <!--Card-->
+        <!-- <div class="card my-5 m-4">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGL0JlFJtuob4kSY-wO--9gjlbSNMjlm6pvZFxAH917uo2PS11We8Vv_mzcpmKg109MU&usqp=CAU"
+            class="card-img-top"
+            id="moviePoster"
+            style="object-fit: cover"
+          />
+          <div class="card-body">
+            <h5 class="card-title" id="movieName">Post title</h5>
+            <p class="card-text" id="movieAwards">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              sapiente repellendus voluptates laborum dolorem veritatis
+              exercitationem, ullam veniam at aspernatur et laboriosam
+              praesentium maiores minima consequuntur perferendis, blanditiis
+              fugiat! Ut?
+            </p>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="jumbotron jumbotron-fluid m-0 bg-info text-white">
+        <div class="container">
+          <div
+            class="d-flex flex-lg-row flex-column justify-content-between"
+          ></div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
